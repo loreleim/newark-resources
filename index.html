@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>One Summer Chicago | Need an ID?</title>
+    <meta charset="utf-8">
+    <!--SEO Optimization-->
+    <meta name="description"
+        content="ChicagoLX Inforgraphic on how to obtain identification credentials for employment, opening a bank account and more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--External Linking-->
+    <link rel="stylesheet" href="styles.css">
+    <script src="scrollTo.js"></script>
+    <!--Icons-->
+    <link rel="icon" href="images/favicon-32x32.png">
+    <!--Apple Optmization 180x180-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+</head>
+
+<body class="infographic">
+    <h1>Need an ID? Check out the types of ID below</h1>
+    <div class="mother-container">
+        <!--MUNICIPAL ID-->
+        <div class="container" id="national">
+            <img class="charts" src="images/info-municipal.svg">
+            <button class="accordion" onclick="mcScroller(document.getElementById('national'))">
+                <h2>Click for more info</h2><img class="arrows" src="images/arrow-down.svg" width="12px">
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>Newark Municipal ID (NMID) is a photo identification card and proof of residency for Newark
+                        residents, which enable you to access city government services, schools, libraries, and also
+                        open a bank account. The NMID card is a broadly accepted, Official form of identification within
+                        the City of Newark. The card also can be used for discounts at participating health and wellness
+                        centers, prescription programs, movie theaters, and more. </li>
+                    <li><a href="https://drive.google.com/file/d/1Qu_4Sv0GrvBs2S_vqooFPcaF53V4iGvd/view"
+                            target="_blank">Documents</a> to apply include: proof of identification (ex. birth
+                        certification, social security card, school enrollment ) and proof of residency (ex. utility
+                        bill).</li>
+                    <li>The residency proof (PSEG bill, lease orbank statement) can be in the adult parents name they
+                        reside with.</li>
+                    <li>You can apply regardless of immigration status.</li>
+                    <li>The city id can be used for libraries, some banks and other city perks - it is also very helpful
+                        for those who are undocumented.</li>
+                    <li>Application Fees: $7 for youth up to age 19; $15 for Adults over 19. Financial hardship waivers
+                        available</li>
+                    <li>For more information and to apply, <a href="http://municipalid.ci.newark.nj.us"
+                            target="_blank">click here for more info</a>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mother-container">
+        <!--NEW JERSEY STATE ID-->
+        <div class="container" id="id">
+            <img class="charts" src="images/info-stateid.svg">
+            <button class="accordion" onclick="mcScroller(document.getElementById('id'))">
+                <h2>Click for more info</h2><img class="arrows" src="images/arrow-down.svg" width="12px">
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>Requested for <b>employment</b>, <b>college</b>, opening a <b>bank account</b>, <b>travel</b>
+                        and more. (A driver’s license serves in place of a state ID for people who have them.) </li>
+                    <li>To get a state ID, individuals most often bring their social security card, birth certificate
+                        AND a transcript or report card (with address) or utility bill. </li>
+                    <li>Your state will likely charge you a small fee to get a state ID. </li>
+                    <li>Click <a href="https://www.state.nj.us/mvc/license/nondriverid.htm" target="_blank">here for
+                            more info.</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--VITAL CERTIFICATE-->
+        <div class="container" id="vc">
+            <img class="charts" src="images/info-vital.svg">
+            <button class="accordion" onclick="mcScroller(document.getElementById('vc'))">
+                <h2>Click for more info</h2><img class="arrows" src="images/arrow-down.svg" width="12px">
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>Requested for <b>employment</b>, <b>college</b>, opening a <b>bank account</b>, <b>travel</b>
+                        and more. (A driver’s license serves in place of a state ID for people who have them.) </li>
+                    <li>Application fee is $25 dollars.</li>
+                    <li>Click <a href="https://www.newarknj.gov/card/vital-certificates" target="_blank">here for
+                            more info.</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion"); var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else { panel.style.display = "block"; }
+            });
+        }
+    </script>
+</body>
+
+</html>
